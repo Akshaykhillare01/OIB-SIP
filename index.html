@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="Logo">
+        <img src="03.jpg" alt="default">
+      </div>
+      <div class="main">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Sevices</a>
+        <a href="#">Contact</a>
+        <!-- <a href="#">Search</a> -->
+        <button class="btn" onclick="Searchfunc()">search</button>
+        <input type="search" id="search">
+        <h3 class="info"></h3>
+      </div>
+      <img src="ak.jpg" alt="image" id="sale">
+      <div class="menu">
+        <h1>Diwali Festival <span>Offers</span></h1>
+        <h2>at 50% discount of each product</h2>
+        <h2>starts from 24 oct - 30 oct</h2>
+        <br>
+        <a href="#">Shop now</a>
+      </div>
+    </nav>
+  </header>
+  <footer>
+    <p> &copy; Developed by Akshay Khillare</p>
+  </footer>
+  <script>
+    function Searchfunc() {
+      let res = document.getElementById('search').value = "";
+      let info=document.querySelector('info');
+      info.innerHTML="Search Results Not Found";
+    }
+  </script>
+</body>
+
+</html>
